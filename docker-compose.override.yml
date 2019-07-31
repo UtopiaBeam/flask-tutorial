@@ -1,0 +1,11 @@
+version: "3.2"
+
+services:
+  print-server:
+    image: python:3.6.5-slim
+    restart: always
+    ports:
+      - 80:80
+    volumes:
+      - .:/server
+    command: sh -c 'cd server && pip install --trusted-host pypi.python.org -r requirements.txt && python src/app.py'
