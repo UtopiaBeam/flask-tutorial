@@ -4,3 +4,5 @@ services:
   print-server:
     container_name: print-server
     restart: always
+    environment:
+      HOST:
