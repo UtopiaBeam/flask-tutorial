@@ -6,3 +6,5 @@ services:
     restart: always
     environment:
       HOST:
+      RMQ_URL:
+      RMQ_QUEUE:
